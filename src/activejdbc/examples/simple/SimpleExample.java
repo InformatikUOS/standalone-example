@@ -7,7 +7,7 @@ import org.slf4j.LoggerFactory;
 public class SimpleExample {
     final static Logger logger = LoggerFactory.getLogger(SimpleExample.class);
     public static void main(String[] args) {
-        Base.open("com.mysql.jdbc.Driver", "jdbc:mysql://localhost/test", "root", "p@ssw0rd");
+	Base.open("org.postgresql.Driver", "jdbc:postgresql://dbs17.informatik.uos.de/BENUTZERKENNUNG", "BENUTZERKENNUNG", "MATR.NR");
 
         createEmployee();
         logger.info("=========> Created employee:");
